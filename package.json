@@ -1,0 +1,35 @@
+{
+  "name": "lambda-mail",
+  "version": "0.0.1",
+  "description": "aws lambda function for handling emails",
+  "scripts": {
+    "test": "lab -t 100 -e \"\" test",
+    "lint": "eslint **/*.js",
+    "lambda:list": "node-lambda list",
+    "lambda:create": "node-lambda create function/* --browserify",
+    "lambda:update": "node-lambda update function/* --browserify --skip-publish",
+    "lambda:deploy": "node-lambda deploy function/*"
+  },
+  "author": "First+Third",
+  "license": "MIT",
+  "keywords": [
+    "lambda-module",
+    "email"
+  ],
+  "dependencies": {
+    "async": "^1.5.2",
+    "confi": "^1.0.0",
+    "handlebars": "^4.0.5",
+    "js-yaml": "^3.5.3",
+    "lodash": "^4.3.0",
+    "logr": "^1.2.0",
+    "nodemailer": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.2",
+    "eslint-config-firstandthird": "^1.1.0",
+    "eslint-plugin-react": "^4.1.0",
+    "node-lambda": "https://github.com/firstandthird/node-lambda/archive/0.0.2.tar.gz"
+  }
+}

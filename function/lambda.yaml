@@ -1,0 +1,6 @@
+name: 'email'
+mainFile: 'index.js'
+conf:
+  Handler: 'index.handler'
+  Timeout: 10
+  Runtime: 'nodejs'
