@@ -1,4 +1,4 @@
-name: 'email'
+name: 'send'
 mainFile: 'index.js'
 conf:
   Handler: 'index.handler'
