@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "lab -t 100 -e \"\" test",
-    "lint": "eslint **/*.js",
-    "lambda:list": "node-lambda list",
-    "lambda:create": "node-lambda create function/* --browserify",
-    "lambda:update": "node-lambda update function/* --browserify --skip-publish",
-    "lambda:deploy": "node-lambda deploy function/*"
+    "lint": "eslint **/*.js"
   },
   "author": "First+Third",
   "license": "MIT",
@@ -32,6 +28,6 @@
     "eslint-config-airbnb": "^6.0.2",
     "eslint-config-firstandthird": "^1.1.0",
     "eslint-plugin-react": "^4.1.0",
-    "node-lambda": "https://github.com/firstandthird/node-lambda/archive/0.0.2.tar.gz"
+    "lamploy": "0.1.0"
   }
 }
