@@ -33,13 +33,10 @@ const config = {
 const repo = new TemplateRepository(config.partials, config.helpers, config.s3, GlobalTemplateCache);
 const email = new Email(config.smtp, config.debug);
 
-
 module.exports.handler = (event, context) => {
-
   if (event.refreshCache === 'refresh') {
     log(['refresh'], 'Cache Refreshed');
     GlobalTemplateCache = {};
-    return context.succeed();
   }
 
   async.auto({
