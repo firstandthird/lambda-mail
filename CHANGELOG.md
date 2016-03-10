@@ -1,4 +1,13 @@
 
+0.0.5 / 2016-03-10
+==================
+
+  * fixed some linting
+  * fixed template cache error
+  * can send a subject to over-ride the built-in template subject both over-ride and template subjects go through handlebars
+  * handles details.subject template
+  * update to use lamploy
+
 0.0.4 / 2016-03-06
 ==================
 
