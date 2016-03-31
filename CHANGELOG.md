@@ -1,4 +1,10 @@
 
+0.0.6 / 2016-03-31
+==================
+
+  * better error checking, return right away if cache refreshed
+  * updated to support 'text' option
+
 0.0.5 / 2016-03-10
 ==================
 

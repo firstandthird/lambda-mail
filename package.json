@@ -1,6 +1,6 @@
 {
   "name": "lambda-mail",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "aws lambda function for handling emails",
   "main": "index.js",
   "scripts": {
