@@ -38,6 +38,10 @@ module.exports.handler = (event, context) => {
   if (event.refreshCache === 'refresh') {
     log(['refresh'], 'Cache Refreshed');
     GlobalTemplateCache = {};
+    return context.done(null, 'Cache refreshed');
+  }
+  if (!event.template || !event.to) {
+    return context.fail('missing template and to');
   }
 
   async.auto({
