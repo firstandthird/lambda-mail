@@ -42,6 +42,16 @@ module.exports.handler = (event, context) => {
 
   async.auto({
     render: (done) => {
+      if (event.text) {
+        return done(null, {
+          details: {
+            from: event.from,
+            fromName: event.from
+          },
+          subject: event.subject,
+          html: event.text
+        });
+      }
       repo.renderTemplate(event.template, event.data, done);
     },
     send: ['render', (done, results) => {
