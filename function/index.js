@@ -45,7 +45,7 @@ module.exports.handler = (event, context) => {
     GlobalTemplateCache = {};
     return context.done(null, 'Cache refreshed');
   }
-  if (!event.template || !event.to) {
+  if ((!event.template && !event.text) || !event.to) {
     return context.fail('missing template and to');
   }
 
@@ -55,10 +55,10 @@ module.exports.handler = (event, context) => {
         return done(null, {
           details: {
             from: event.from,
-            fromName: event.from
+            fromName: event.fromName
           },
           subject: event.subject,
-          html: event.text
+          text: event.text
         });
       }
       repo.renderTemplate(event.template, event.data, done);
