@@ -6,7 +6,12 @@ const async = require('async');
 const Logr = require('logr');
 const log = new Logr({
   defaultTags: ['handler'],
-  type: 'json'
+  type: 'json',
+  renderOptions: {
+    json: {
+      tagsObject: true
+    }
+  }
 });
 
 let GlobalTemplateCache = {};
