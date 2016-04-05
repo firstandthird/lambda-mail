@@ -16,9 +16,7 @@ const log = new Logr({
 
 let GlobalTemplateCache = {};
 
-const splitIfExists = (val) => {
-  return (val) ? val.split(',') : [];
-};
+const splitIfExists = (val) => (val) ? val.split(',') : [];
 
 const config = {
   debug: process.env.DEBUG,
