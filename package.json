@@ -21,7 +21,9 @@
     "js-yaml": "^3.5.3",
     "lodash": "^4.3.0",
     "logr": "^1.7.0",
-    "nodemailer": "^2.1.0"
+    "mandrill-api": "^1.0.45",
+    "nodemailer": "^2.1.0",
+    "nodemailer-smtp-transport": "^2.4.1"
   },
   "devDependencies": {
     "eslint": "^2.2.0",
